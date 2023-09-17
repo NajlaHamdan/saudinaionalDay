@@ -1,15 +1,6 @@
-.container {
-  padding: 0 2rem;
-}
-
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .footer {
@@ -102,12 +93,66 @@
   font-size: 1.25rem;
   line-height: 1.5;
 }
+.name {
+  font-size: 2rem;
+  color: #266b3d;
+  position: absolute;
+  font-weight: 500;
+  top: 150%;
+  left: 60%;
+  z-index: 6;
+}
+.img {
+  position: relative;
+}
+.imgTwitter {
+  position: relative;
+}
+.twitterp {
+  font-size: 2rem;
+  color: black;
+  position: absolute;
+  font-weight: 500;
+  top: 150%;
+  left: 50%;
+  z-index: 6;
+}
 
+.container {
+  overflow: auto;
+  width: fit-content;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.input {
+  width: 90vh;
+  outline: none;
+  border: 1px solid gray;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  text-align: right;
+  margin-right: 0.5rem;
+}
+.button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #975ab7;
+  border: none;
+  border-radius: 2rem;
+}
+.select{
+  margin-right: 0.5rem;
+  padding: 0.5rem .3rem;
+  border-radius: 2rem;
+}
 .logo {
   height: 1em;
   margin-left: 0.5rem;
 }
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
