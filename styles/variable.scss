@@ -1,0 +1,39 @@
+$bp-huge: 112.5em; //1800/16
+$bp-largest: 75em; //1200/16
+$bp-large: 68.75em; //1100/16
+$bp-meduiam: 56.25em; //900/16
+$bp-small: 37.5em; //600/16
+$bp-smallest: 31.25em; //500/16
+
+@mixin respond($breakpoint) {
+    // only screen apply this style on screen not on print 
+    @if $breakpoint == smallest {
+      @media only screen and (max-width: 31.25em) {
+        //500/16=  16 is 1 em
+        @content;
+      }
+    }
+    @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) {
+        //600/16=  16 is 1 em
+        @content;
+      }
+    }
+    @if $breakpoint == tab-port {
+      @media only screen and (max-width: 56.25em) {
+        // 900/16=
+        @content;
+      }
+    }
+    @if $breakpoint == tab-land {
+      @media only screen and (max-width: 75em) {
+        // 1200/16=
+        @content;
+      }
+    }
+    @if $breakpoint == big-desctop {
+      @media only screen and (min-width: 112.5em) {
+        @content;
+      }
+    }
+  }

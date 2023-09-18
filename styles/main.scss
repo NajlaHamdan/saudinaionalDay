@@ -1,0 +1,175 @@
+@import "./variable.scss";
+.img {
+  position: relative;
+}
+.imgTwitter {
+  position: relative;
+}
+.box {
+  position: absolute;
+  top: 150%;
+  left: 70%;
+  z-index: 6;
+  width: 20%;
+  height: 20%;
+  transform: translate(-50%, -50%);
+}
+.boxTwitter {
+  position: absolute;
+  // top: 170%;
+  top: 95rem;
+  left: 70rem;
+  z-index: 6;
+  @media only screen and(min-width:$bp-huge) {
+    // 75
+    top: 60rem;
+    left: 40rem;
+  }
+  @media only screen and(max-width:$bp-largest) {
+    // 75
+    top: 105rem;
+    left: 75rem;
+  }
+  @media only screen and(max-width:$bp-large) {
+    // 75
+    top: 105rem;
+    left: 75rem;
+  }
+  // does not work
+  @media only screen and(max-width:$bp-meduiam) {
+    //56
+    // background-color: yellow;
+    top: 115rem;
+    left: 85rem;
+    // transform: translate(50%,50%);
+    width: 30rem;
+  }
+  @media only screen and(max-width:$bp-small) {
+    //37
+    top: 145rem;
+    left: 110rem;
+    width: 30rem;
+  }
+  @media only screen and(max-width:$bp-smallest) {
+    // 31
+    // top: 330%;
+    top: 115rem;
+    left: 80rem;
+    // width: 30rem;
+  }
+}
+.boxWhatsApp {
+  position: absolute;
+  top: 320%;
+  // top:185rem;
+  left: 35%;
+  z-index: 6;
+  @media only screen and(min-width:$bp-huge) {
+    // 75
+    // top: 250%;
+    left: 25rem;
+  }
+  @media only screen and(max-width:$bp-largest) {
+    // 75
+    // top: 250%;
+    left: 50rem;
+  }
+  @media only screen and(max-width:$bp-large) {
+    // 75
+    // top: 250%;
+    left: 50rem;
+  }
+  // does not work
+  @media only screen and(max-width:$bp-meduiam) {
+    //56
+    // background-color: yellow;
+    // top: 190%;
+    left: 50rem;
+    // transform: translate(50%,50%);
+    // width: 30rem;
+  }
+  @media only screen and(max-width:$bp-small) {
+    //37
+    // top: 330%;
+    left: 70rem;
+    width: 30rem;
+  }
+  @media only screen and(max-width:$bp-smallest) {
+    // 31
+    // top: 330%;
+    top: 190rem;
+    left: 60rem;
+    // width: 30rem;
+  }
+}
+.name {
+  @media only screen and(max-width:$bp-smallest) {
+    font-size: 9rem;
+  }
+  font-size: 4rem;
+  color: #266b3d;
+  font-weight: 500;
+  // top:70vw;
+  // left:55vw;
+  // @media only screen and (max-width: $bp-largest) {
+  //     left: 65%;
+  //     font-size: 4rem;
+  //    top:80%
+  //   }
+  //   @media only screen and(max-width:$bp-meduiam){
+  //     left: 90%;
+  //     font-size: 4rem;
+  //    top:75%
+  //   }
+}
+
+.twitterp {
+  font-size: 4rem;
+  color: black;
+  //   position: absolute;
+  font-weight: 500;
+  //   top: 150%;
+  //   left: 50%;
+  z-index: 6;
+}
+
+.container {
+  overflow: auto;
+  width: fit-content;
+  height: 50%;
+}
+.form {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  @media only screen and(max-width:$bp-smallest){
+    background-color: #975ab7;
+  }
+}
+.input {
+  width: 90vh;
+  outline: none;
+  border: 1px solid gray;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  text-align: right;
+  margin-right: 1rem;
+}
+.button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #975ab7;
+  border: none;
+  border-radius: 2rem;
+}
+.select {
+  margin-right: 0.5rem;
+  padding: 0.5rem 0.3rem;
+  border-radius: 2rem;
+}
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
