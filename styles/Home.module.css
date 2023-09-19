@@ -122,28 +122,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   width: 100%; }
 
 .input {
   width: 90vh;
   outline: none;
-  border: 1px solid gray;
-  padding: 0.5rem 1rem;
+  border: 1px solid #b9b7b7;
+  padding: 1rem 4rem;
   border-radius: 2rem;
-  text-align: right;
-  margin-right: 1rem; }
+  text-align: right; }
 
 .button {
-  padding: 0.5rem 1rem;
+  padding: 1rem 4rem;
   color: #fff;
-  background-color: #975ab7;
+  background-color: #336A2E;
   border: none;
   border-radius: 2rem; }
 
 .select {
-  margin-right: 0.5rem;
-  padding: 0.5rem 0.3rem;
-  border-radius: 2rem; }
+  padding: 1rem .5rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none; }
 
 .logo {
   height: 1em;
@@ -154,10 +155,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #efefef;
-  padding-left: 1rem;
-  width: 100%;
-  flex-basis: 0; }
-  @media only screen and (max-width: 31.25em) {
-    .header {
-      width: 100%; } }
+  background-color: #E6F4EA;
+  padding-left: 1rem; }
