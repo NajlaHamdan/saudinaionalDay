@@ -6,12 +6,36 @@
 
 .box {
   position: absolute;
-  top: 150%;
-  left: 70%;
-  z-index: 6;
-  width: 20%;
-  height: 20%;
-  transform: translate(-50%, -50%); }
+  top: 90rem;
+  left: 75rem;
+  z-index: 6; }
+  @media only screen and (min-width: 112.5em) {
+    .box {
+      top: 60rem;
+      left: 45rem; } }
+  @media only screen and (max-width: 75em) {
+    .box {
+      top: 100rem;
+      left: 85rem; } }
+  @media only screen and (max-width: 68.75em) {
+    .box {
+      top: 100rem;
+      left: 80rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .box {
+      top: 110rem;
+      left: 90rem;
+      width: 30rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .box {
+      top: 130rem;
+      left: 110rem;
+      width: 40rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .box {
+      top: 110rem;
+      left: 80rem;
+      width: 40rem; } }
 
 .boxTwitter {
   position: absolute;
@@ -75,6 +99,9 @@
   font-size: 4rem;
   color: #266b3d;
   font-weight: 500; }
+  @media only screen and (max-width: 37.5em) {
+    .name {
+      font-size: 9rem; } }
   @media only screen and (max-width: 31.25em) {
     .name {
       font-size: 9rem; } }
