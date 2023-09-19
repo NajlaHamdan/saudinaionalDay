@@ -180,8 +180,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
+  flex-grow: 0;
 }
 .input {
   width: 90vh;
@@ -206,24 +207,17 @@
   outline: none;
   border: none;
 }
-.logo {
-  height: 1em;
-  // margin-left: 0.5rem;
-  display: flex;
-  justify-content: center;
-}
 .header{
   display: flex;
-  justify-content:space-between;
+  justify-content:space-around;
   align-items: center;
   background-color: #E6F4EA;
   padding-left: 1rem;
-  // width: 100%;
-  // & > div{
-  //   width: 50%;
-
-  // }
-  // @media only screen and(max-width:$bp-smallest){
-  //   width: 100%
-  // }
+  width: 100%;
+  flex-shrink: 0;
+}
+.logo {
+  height: 1em;
+  display: flex;
+  justify-content: center;
 }

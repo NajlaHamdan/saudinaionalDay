@@ -122,8 +122,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  width: 100%; }
+  gap: 1rem;
+  width: 100%;
+  flex-grow: 0; }
 
 .input {
   width: 90vh;
@@ -146,14 +147,16 @@
   outline: none;
   border: none; }
 
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #E6F4EA;
+  padding-left: 1rem;
+  width: 100%;
+  flex-shrink: 0; }
+
 .logo {
   height: 1em;
   display: flex;
   justify-content: center; }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #E6F4EA;
-  padding-left: 1rem; }
