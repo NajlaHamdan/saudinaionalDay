@@ -66,17 +66,18 @@
       width: 30rem; } }
   @media only screen and (max-width: 31.25em) {
     .boxTwitter {
-      top: 115rem;
+      top: 100rem;
       left: 80rem; } }
 
 .boxWhatsApp {
   position: absolute;
-  top: 320%;
+  top: 190rem;
   left: 35%;
   z-index: 6; }
   @media only screen and (min-width: 112.5em) {
     .boxWhatsApp {
-      left: 25rem; } }
+      left: 25rem;
+      top: 110rem; } }
   @media only screen and (max-width: 75em) {
     .boxWhatsApp {
       left: 50rem; } }
