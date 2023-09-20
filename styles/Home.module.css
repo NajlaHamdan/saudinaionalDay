@@ -75,7 +75,7 @@
 .boxWhatsApp {
   position: absolute;
   top: 190rem;
-  left: 35%;
+  left: 45rem;
   z-index: 6; }
   @media only screen and (min-width: 112.5em) {
     .boxWhatsApp {
@@ -118,8 +118,7 @@
 
 .container {
   overflow: auto;
-  width: fit-content;
-  height: 50%; }
+  width: fit-content; }
 
 .form {
   padding: 3rem;

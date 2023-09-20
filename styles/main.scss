@@ -99,7 +99,7 @@
   position: absolute;
   top: 190rem;
   // top:185rem;
-  left: 35%;
+  left: 45rem;
   z-index: 6;
   @media only screen and(min-width:$bp-huge) {
     // 75
@@ -177,7 +177,7 @@
 .container {
   overflow: auto;
   width: fit-content;
-  height: 50%;
+  // height: 50%;
 }
 .form {
   padding: 3rem;
