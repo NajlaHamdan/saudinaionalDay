@@ -82,89 +82,91 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.header}>
-
-        <div>
-        <Image src="/logo.png" alt="logo" width={100}
-              height={50}/>
-        </div>
           <div>
-          <form onSubmit={getName} className={styles.form}>
-            <input
-              className={styles.input}
-              type="text"
-              name="name"
-              placeholder="أدخل أسمك وانقر على الصورة للحصول على نسختك الخاصة من التصميم"
-            />
+            <Image src="/logo.png" alt="logo" width={100} height={50} />
+          </div>
+          <div>
+            <form onSubmit={getName} className={styles.form}>
+              <input
+                className={styles.input}
+                type="text"
+                name="name"
+                placeholder="أدخل أسمك وانقر على الصورة للحصول على نسختك الخاصة من التصميم"
+              />
 
-            <select name="design" className={styles.select}>
-              <option value="">التصميم</option>
-              <option value={0}>التصميم linkedin</option>
-              <option value={1}>التصميم twitter</option>
-              <option value={2}>التصميم whatsApp</option>
-            </select>
-            <button className={styles.button} type="submit">
-              إرسال
-            </button>
-          </form>
+              <select name="design" className={styles.select}>
+                <option value="">التصميم</option>
+                <option value={0}>التصميم linkedin</option>
+                <option value={1}>التصميم twitter</option>
+                <option value={2}>التصميم whatsApp</option>
+              </select>
+              <button className={styles.button} type="submit">
+                إرسال
+              </button>
+            </form>
           </div>
         </div>
-          {design == 0 && (
-            <div className={styles.container} id="content">
-              <div className={styles.box}>
-                <p className={styles.name}>{userName ? userName : ""}</p>
-              </div>
-              <img
-                className={styles.img}
-                src="/linkedin.jpg"
-                alt="linkedIn"
-                onClick={downloadPdf}
-              />
+        {design == 0 && (
+          <div className={styles.container} id="content">
+            <div className={styles.box}>
+              <p className={styles.name}>{userName ? userName : ""}</p>
             </div>
-          )}
-          {design == 1 && (
-            <div className={styles.container} id="twitter">
-              <div className={styles.boxTwitter}>
-                <p className={styles.twitterp}>{userName ? userName : ""}</p>
-              </div>
-              <img
-                className={styles.imgTwitter}
-                src="/twitter.jpg"
-                alt="twitter"
-                onClick={downloadTwitter}
-              />
+            <img
+              className={styles.img}
+              src="/linkedin.jpg"
+              alt="linkedIn"
+              onClick={downloadPdf}
+            />
+          </div>
+        )}
+        {design == 1 && (
+          <div className={styles.container} id="twitter">
+            <div className={styles.boxTwitter}>
+              <p className={styles.twitterp}>{userName ? userName : ""}</p>
             </div>
-          )}
-          {design == 2 && (
-            <div className={styles.container} id="whatsApp">
-              <div className={styles.boxWhatsApp}>
-                <p className={styles.twitterp}>{userName ? userName : ""}</p>
-              </div>
-              <img
-                className={styles.imgTwitter}
-                src="/whatsApp.jpg"
-                alt="whatsApp"
-                onClick={downloadWhatsApp}
-              />
+            <img
+              className={styles.imgTwitter}
+              src="/twitter.jpg"
+              alt="twitter"
+              onClick={downloadTwitter}
+            />
+          </div>
+        )}
+        {design == 2 && (
+          <div className={styles.container} id="whatsApp">
+            <div className={styles.boxWhatsApp}>
+              <p className={styles.twitterp}>{userName ? userName : ""}</p>
             </div>
-          )}
+            <img
+              className={styles.imgTwitter}
+              src="/whatsApp.jpg"
+              alt="whatsApp"
+              onClick={downloadWhatsApp}
+            />
+          </div>
+        )}
         {/* </div> */}
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://www.linkedin.com/in/najla-alofi/"
-          target="_blank"
-          // rel="noopener noreferrer"
-        >
-          <span className={styles.logo}>
-            <Image
-              src="/najla.png"
-              alt="najla Logo"
-              width={250}
-              height={100}
-            />
-          </span>
+       <div>
+       <span className={styles.logo}>
+          <Image
+            src="/logo copy.png"
+            alt="najla Logo"
+            width={150}
+            height={100}
+          />
+        </span>
+       </div>
+        <div>
+          <p>
+
+        <a href="https://www.linkedin.com/in/najla-alofi/" target="_blank">
+          prepared by Najla Alofi
         </a>
+          </p>
+        </div>
       </footer>
     </div>
   );
