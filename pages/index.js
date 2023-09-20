@@ -56,11 +56,8 @@ export default function Home() {
     const doc = new jsPDF();
     const domElement = document.getElementById("whatsApp");
     const body = await html2canvas(domElement).then(function (canvas) {
-      //  domElement.appendChild(canvas);
       const img = canvas.toDataURL("image/jpeg");
-      // canvas.append(domElement);
-      // doc.addImage(img, "jpg", 5, 5, 200, 250);
-      // doc.save("a4.jpg");
+      //  domElement.appendChild(canvas);
       var a = document.createElement("a");
       // toDataURL defaults to png, so we need to request a jpeg, then convert for file download.
       a.href = canvas
