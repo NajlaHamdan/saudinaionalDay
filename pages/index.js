@@ -55,6 +55,7 @@ export default function Home() {
   const downloadWhatsApp = async () => {
     const doc = new jsPDF();
     const viewport=document.getElementById("viewport").getAttribute("content");
+    console.log(viewport);
     const domElement = document.getElementById("whatsApp");
     const body = await html2canvas(domElement).then(function (canvas) {
       //  domElement.appendChild(canvas);
@@ -70,6 +71,7 @@ export default function Home() {
 
       a.download = "whatsApp.jpg";
       a.click();
+      document.getElementById("viewport").setAttribute("content",viewport);
     });
   };
   return (
