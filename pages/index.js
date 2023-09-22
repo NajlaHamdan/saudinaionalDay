@@ -58,8 +58,9 @@ export default function Home() {
     document
       .getElementById("viewport")
       .setAttribute("content", "width=800, initial-scale=0.4");
-    const domElement = document.getElementById("twitter");
-    const body = await html2canvas(domElement, { windowWidth: "1280px" })
+    const domElement = document.getElementById("whatsApp");
+    const body = await html2canvas(domElement, { width: 1200,
+      height: 1200 })
       .then(function (canvas) {
         //  domElement.appendChild(canvas);
         const img = canvas.toDataURL("image/jpeg");
@@ -153,7 +154,7 @@ export default function Home() {
               className={styles.imgWhats}
               src="/whatsApp.jpg"
               alt="whatsApp"
-              onClick={downloadWhatsApp}
+              onClick={downloadTwitter}
             />
           </div>
         )}
