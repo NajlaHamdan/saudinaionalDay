@@ -123,7 +123,7 @@ export default function Home() {
           </div>
         )}
         {design == 1 && (
-          <div className={styles.container} id="twitter">
+          <div className={styles.container} id="twittter">
             <div className={styles.boxTwitter}>
               <p className={styles.twitterp}>{userName ? userName : ""}</p>
             </div>
@@ -136,7 +136,7 @@ export default function Home() {
           </div>
         )}
         {design == 2 && (
-          <div className={styles.container} id="whatsApp">
+          <div className={styles.container} id="twitter">
             <div className={styles.boxWhatsApp}>
               <p className={styles.twitterp}>{userName ? userName : ""}</p>
             </div>
