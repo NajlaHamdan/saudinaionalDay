@@ -54,14 +54,14 @@ export default function Home() {
   };
   const downloadWhatsApp = async () => {
     const doc = new jsPDF();
+    const viewport=document.getElementById("viewport").getAttribute("content");
     const domElement = document.getElementById("whatsApp");
-    const viewport = document.getElementById("viewport").getAttribute("content");
-    domElement.width=1200;
-    domElement.height=1200;
-    document.getElementById("viewport").setAttribute("content", "width=800");
     const body = await html2canvas(domElement).then(function (canvas) {
-      const img = canvas.toDataURL("image/jpeg");
       //  domElement.appendChild(canvas);
+      const img = canvas.toDataURL("image/jpeg");
+      // canvas.append(domElement);
+      // doc.addImage(img, "jpg", 5, 5, 200, 250);
+      // doc.save("a4.jpg");
       var a = document.createElement("a");
       // toDataURL defaults to png, so we need to request a jpeg, then convert for file download.
       a.href = canvas
@@ -69,7 +69,6 @@ export default function Home() {
         .replace("image/jpeg", "image/octet-stream");
 
       a.download = "whatsApp.jpg";
-      document.getElementById("viewport").setAttribute("content", viewport);
       a.click();
     });
   };
