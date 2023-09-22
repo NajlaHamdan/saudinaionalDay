@@ -175,9 +175,8 @@
 }
 
 .container {
-  overflow: auto;
+  overflow: hidden;
   width: fit-content;
-  height: 50%;
 }
 .form {
   padding: 3rem;

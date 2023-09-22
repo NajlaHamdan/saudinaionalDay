@@ -54,13 +54,9 @@ export default function Home() {
   };
   const downloadWhatsApp = async () => {
     const doc = new jsPDF();
-    var viewport = document.getElementById("viewport").getAttribute("content");
-    document
-      .getElementById("viewport")
-      .setAttribute("content", "width=800, initial-scale=0.4");
+   
     const domElement = document.getElementById("whatsApp");
-    const body = await html2canvas(domElement, { width: 1200,
-      height: 1200 })
+    const body = await html2canvas(domElement)
       .then(function (canvas) {
         //  domElement.appendChild(canvas);
         const img = canvas.toDataURL("image/jpeg");
@@ -76,9 +72,6 @@ export default function Home() {
         a.download = "whatsApp.jpg";
         a.click();
       })
-      .then(() => {
-        document.getElementById("viewport").setAttribute("content", viewport);
-      }).catch(err=>console.log(err));
   };
   return (
     <div>
@@ -146,7 +139,7 @@ export default function Home() {
           </div>
         )}
         {design == 2 && (
-          <div className={styles.container} id="twitter">
+          <div className={styles.container} id="whatsApp">
             <div className={styles.boxWhatsApp}>
               <p className={styles.twitterp}>{userName ? userName : ""}</p>
             </div>
@@ -154,7 +147,7 @@ export default function Home() {
               className={styles.imgWhats}
               src="/whatsApp.jpg"
               alt="whatsApp"
-              onClick={downloadTwitter}
+              onClick={downloadWhatsApp}
             />
           </div>
         )}
