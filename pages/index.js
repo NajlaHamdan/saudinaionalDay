@@ -71,8 +71,8 @@ export default function Home() {
 
       a.download = "whatsApp.jpg";
       a.click();
-      document.getElementById("viewport").setAttribute("content",viewport);
     });
+    document.getElementById("viewport").setAttribute("content",viewport);
   };
   return (
     <div>
