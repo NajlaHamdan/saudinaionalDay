@@ -57,7 +57,7 @@ export default function Home() {
     var viewport = document.getElementById("viewport").getAttribute("content");
     document.getElementById("viewport").setAttribute("content", "width=800, initial-scale=0.4");
     const domElement = document.getElementById("whatsApp");
-    const body = await html2canvas(domElement).then(function (canvas) {
+    const body = await html2canvas(domElement,{windowWidth: '1280px'}).then(function (canvas) {
       //  domElement.appendChild(canvas);
       const img = canvas.toDataURL("image/jpeg");
       // canvas.append(domElement);
