@@ -92,8 +92,7 @@
       left: 50rem; } }
   @media only screen and (max-width: 37.5em) {
     .boxWhatsApp {
-      left: 70rem;
-      width: 10rem; } }
+      left: 70rem; } }
   @media only screen and (max-width: 31.25em) {
     .boxWhatsApp {
       top: 190rem;
@@ -117,7 +116,7 @@
   z-index: 6; }
 
 .container {
-  overflow: hidden;
+  overflow: auto;
   width: fit-content; }
 
 .form {

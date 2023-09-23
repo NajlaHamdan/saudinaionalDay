@@ -68,7 +68,6 @@ export default function Home() {
         a.href = canvas
           .toDataURL("image/jpeg")
           .replace("image/jpeg", "image/octet-stream");
-
         a.download = "whatsApp.jpg";
         a.click();
       })
@@ -145,7 +144,7 @@ export default function Home() {
             </div>
             <img
               className={styles.imgWhats}
-              src="/whatsApp.jpg"
+              src="/whatsApp1.jpg"
               alt="whatsApp"
               onClick={downloadWhatsApp}
             />
